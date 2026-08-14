@@ -1,0 +1,64 @@
+# Tamil Nadu Temple Metro · தமிழ்நாடு கோயில் மெட்ரோ
+
+An interactive, subway-style map of 32 great temples across Tamil Nadu, drawn as a
+sacred transit network. Pan, zoom, tap a station, and a full-height *kopuram*
+(temple tower) panel opens with the temple's story cascading down the page in a
+vintage sepia "waterfall," Tamil leading and English beneath.
+
+**Live map:** https://nishyajoylin-s.github.io/Tamil-Nadu-Temple-Metro/
+
+---
+
+## What you're looking at
+
+The temples are grouped into thematic **lines**, like a metro system:
+
+| Line | Theme |
+|------|-------|
+| **Golden Trunk** | The spine linking the greatest temple cities |
+| **Pancha Bhoota** | The five element temples (earth, water, fire, air, sky) |
+| **Arupadai Veedu** | The six abodes of Lord Murugan |
+| **Navagraha** | The nine planetary temples around Kumbakonam |
+| **Chola Country** | The great living Chola temples |
+| **Shakti / Devi** | Major goddess temples |
+
+- **Stations** are temples. A small coloured dot is a single-line stop; a brown
+  **double-ring** marks an *interchange* — a temple that sits on more than one line.
+- **Interchange temples** (Madurai, Kumbakonam, Chidambaram…) are where the great
+  pilgrimages cross.
+- The faded shape behind the network is the real **Tamil Nadu state boundary**, so
+  the schematic still sits roughly where the temples are on the ground.
+
+## How to use it
+
+- **Drag** to pan, **scroll / pinch** to zoom, or use the **+ / − / fit** buttons.
+- **Search** any temple, town, or deity in the top bar.
+- **Tap a station** to open its tower panel — scroll down to let the story reveal,
+  with a temple bell ringing softly as you go.
+- **Line filter chips** highlight one line at a time.
+- **Pilgrimage mode** auto-travels a line, stopping at each temple in turn.
+- **Day / Night** toggle switches the paper palette.
+
+## Files
+
+| File | What it is |
+|------|-----------|
+| `index.html` | The whole application (self-contained). |
+| `support.js` | The runtime that renders the map. |
+| `temples-data.js` | All temple data + the embedded tower photographs. |
+| `uploads/cut/` | Background-removed *kopuram* cutout images, one per temple. |
+
+Everything runs client-side — no server, no build step. Opening `index.html`
+directly in a browser works too.
+
+## Publishing (GitHub Pages)
+
+1. Push these files to the repo root.
+2. **Settings → Pages → Source: Deploy from a branch → `main` / `(root)` → Save.**
+3. The site goes live at the URL above within a minute or two.
+
+## Credits
+
+Temple photographs are cropped from public images of each shrine. Tamil temple
+names and descriptions accompany every station. Built as a design piece — a love
+letter to the temple towns of Tamil Nadu.
