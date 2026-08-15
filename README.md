@@ -32,8 +32,10 @@ the gopurams and temple lore of Tamil Nadu.
 
 There are two views, switchable in the top bar:
 
-- **Temples** (home), a gallery carousel. The centre gopuram stands large with its story
-  cascading beneath; the previous and next towers peek in small on either side.
+- **Temples** (home), a gallery carousel. Each of the 32 temples shows its full-height
+  *kopuram* as a background-removed photograph, standing large in the centre with its
+  Tamil and English name and story alongside; the previous and next towers peek in small
+  on either side.
 - **Map**, the full metro network. The temples are grouped into thematic **lines**:
 
 | Line | Theme |
@@ -74,7 +76,8 @@ There are two views, switchable in the top bar:
 | `index.html` | The whole application (self-contained). |
 | `support.js` | The runtime that renders the map. |
 | `temples-data.js` | All temple data + the embedded tower photographs. |
-| `uploads/cut/` | Background-removed *kopuram* cutout images, one per temple. |
+| `uploads/full/` | Full-height *kopuram* cutouts (transparent), shown on the Temples home. One per temple, all 32. |
+| `uploads/cut/` | Cropped tower-crown cutouts used as station markers on the map. One per temple, all 32. |
 
 Everything runs client-side, no server, no build step. Opening `index.html`
 directly in a browser works too.
