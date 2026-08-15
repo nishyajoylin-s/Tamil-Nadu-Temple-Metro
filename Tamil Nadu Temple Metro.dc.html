@@ -775,6 +775,7 @@ class Component extends DCLogic {
     }, { passive: false });
     el.addEventListener('pointermove', (e) => {
       if (this._reduced || !this._galTowerWrap) return;
+      if (e.pointerType === 'touch') return;
       const r = el.getBoundingClientRect();
       const nx = (e.clientX - r.left) / r.width - 0.5;
       const ny = (e.clientY - r.top) / r.height - 0.5;
